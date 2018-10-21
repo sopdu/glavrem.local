@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ТКР</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/favicon.ico" rel="shortcut icon">
+        <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>        
+        <div id="maincontent">
+            <!--Header-->
+            <header id="header">
+                <div class="container">
+                    <div class="row flex-box">
+                        <div class="col logo">
+                            <a href="/">
+                                <img src="img/logo.png" alt="Территория качественного ремонта" class="responsive-img"/>
+                            </a>
+                            <p class="indent show-on-small small">
+                                <b>Автосервис<br />на Рублевском шоссе</b>
+                            </p>
+                            <span class="show-on-small">
+                                <button class="btn-flat open">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </span>    
+                        </div>
+                        <div class="col hide">
+                            <p>
+                                Автосервис<br />на Рублевском шоссе
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="img/place.svg" alt="адрес" class="left"/>
+                            <p class="left">    
+                                <a href="https://yandex.ru/maps/?um=constructor%3A7d6c001d3deaa950e10af3fdd929b4c8e3f6f20a984906c4784799b6d1ee9428&source=constructorLink" target="_blank" rel="nofollow">
+                                    Рублёвское шоссе, 68Ас3<br><span class="grey-color">(м. Крылатское)</span>
+                                </a>    
+                            </p>
+                        </div>
+                        <div class="col hide-on-small-only">
+                            <p class="right-align right">    
+                                <a href="tel:+74954888753" class="h4">+7&nbsp;(495)&nbsp;<b>488-87-53</b></a><br />
+                                <a href="#callback" class="link grey-color modal-trigger">Заказать звонок</a>
+                            </p>
+                            <img src="img/phone.svg" alt="телефон" class="right"/>
+                        </div>                        
+                    </div>
+                </div>
+            </header>
+            <nav id="top-menu" class="z-depth-2">
+                <div class="overlay">
+                    <div class="container">
+                        <ul>
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="/about.html">О нас</a></li>
+                            <li><a href="/gallery.html">Галерея</a></li>
+                            <li><a href="/service.html">Услуги</a></li>
+                            <li><a href="/infotmation.html">Полезная информация</a></li>
+                            <li class="active"><a href="/review.html">Отзывы</a></li>
+                            <li><a href="/contact.html">Контакты</a></li>
+                        </ul>
+                    </div>    
+                </div>
+                <button class="close btn-flat show-on-small">&times;</button>
+            </nav>
+            <!--Title-->
+            <div class="fon-img" style="background-image: url(/img/fon-title.jpg);">
+                <div class="overlay">
+                    <div class="container indent">
+                        <h1>Отзывы</h1>
+                    </div>
+                </div>
+            </div>
+            <!--Breadcrumbs-->
+            <div class="container indent">
+                <ul class="nav-breadcrumb">
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </ul>
+            </div>
+            
+             <div class="back-image col s12">
+                <div class="overlay">
+                    <div class="container padd">
+                        <div class="comment z-depth-1">
+                            <article class="row">
+                                <div class="col s12 comment-head">
+                                    <h4 class="h4"><b>Иван Мимоходов</b></h4>
+                                    <p class="right">26.02.18</p>
+                                </div>
+                                <div class="col s12">
+                                    <p>
+                                        Добрый день! Заезжала в этот не большой сервис на замену масла и ТО, что могу сказать, адекватный персонал, грамотно подобрали масло, все фильтра и колодки по ТО есть на складе у меня Мерседес С-класса, не катался по рынкам в поисках запчастей.
+                                    </p>
+                                </div>
+                                <div class="col s12">
+                                    <div class="re-comment">
+                                        <h4 class="h4"><b>Алла Подрезова</b></h4>
+                                        <p>
+                                            Добрый день! Заезжала в этот не большой сервис на замену масла и ТО, что могу сказать, адекватный персонал, грамотно подобрали масло, все фильтра и колодки по ТО есть на складе у меня Мерседес С-класса, не катался по рынкам в поисках запчастей.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="col s12">
+                                <ul class="collapsible">
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <span class="btn-flat">Ответить</span>
+                                        </div>
+                                        <div class="collapsible-body collapsible-content">
+                                            <form>
+                                                <div class="input-field">
+                                                    <input type="text" value="" id="sender" placeholder="Ваше Имя" />
+                                                </div>
+                                                <div class="input-field">
+                                                    <textarea placeholder="Комментарий"></textarea>
+                                                </div>
+                                                <div class="input-field row captcha">    
+                                                    <div class="col s12 m8 valign-wrapper">
+                                                        <img src="img/captcha.jpg" alt="" class="left"/>
+                                                        <input id="captcha_word" name="captcha_word" type="text" class="inline"/>
+                                                    </div>
+                                                    <div class="col s12 m4 right-align">
+                                                        <input type="submit" class="btn" value="Ответить" />
+                                                    </div>   
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="comment z-depth-1">
+                            <article class="row">
+                                <div class="col s12 comment-head">
+                                    <h4 class="h4"><b>Иван Мимоходов</b></h4>
+                                    <p class="right">26.02.18</p>
+                                </div>
+                                <div class="col s12">
+                                    <p>
+                                        Добрый день! Заезжала в этот не большой сервис на замену масла и ТО, что могу сказать, адекватный персонал, грамотно подобрали масло, все фильтра и колодки по ТО есть на складе у меня Мерседес С-класса, не катался по рынкам в поисках запчастей.
+                                    </p>
+                                </div>
+                            </article>
+                            <div class="col s12">
+                                <ul class="collapsible">
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <span class="btn-flat">Ответить</span>
+                                        </div>
+                                        <div class="collapsible-body collapsible-content">
+                                            <form>
+                                                <div class="input-field">
+                                                    <input type="text" value="" id="sender" placeholder="Ваше Имя" />
+                                                </div>
+                                                <div class="input-field">
+                                                    <textarea placeholder="Комментарий"></textarea>
+                                                </div>
+                                                <div class="input-field row captcha">    
+                                                    <div class="col s12 m8 valign-wrapper">
+                                                        <img src="img/captcha.jpg" alt="" class="left"/>
+                                                        <input id="captcha_word" name="captcha_word" type="text" class="inline"/>
+                                                    </div>
+                                                    <div class="col s12 m4 right-align">
+                                                        <input type="submit" class="btn" value="Ответить" />
+                                                    </div>   
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            
+            <!--Написать отзыв-->
+            <ul class="collapsible">
+                <li>
+                    <div class="enqueue back-image collapsible-header">                
+                        <div class="container">
+                            <div class="row">
+                                <div class="col s12 m7 l8">
+                                    <p class="h2">Написать отзыв</p>
+                                </div>
+                                <div class="col s12 m5 l4">
+                                    <span class="btn-large btn-block modal-trigger">Написать</span>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>  
+                    <div class="col s12 collapsible-body">
+                        <div class="container collapsible-content">
+                        <form>
+                            <div class="input-field">
+                                <input type="text" value="" id="sender" placeholder="Ваше Имя" />
+                            </div>
+                            <div class="input-field">
+                                <textarea placeholder="Комментарий"></textarea>
+                            </div>
+                            <div class="input-field row captcha">    
+                                <div class="col s12 m8 valign-wrapper">
+                                    <img src="img/captcha.jpg" alt="" class="left"/>
+                                    <input id="captcha_word" name="captcha_word" type="text" class="inline"/>
+                                </div>
+                                <div class="col s12 m4 right-align">
+                                    <input type="submit" class="btn" value="Написать отзыв" />
+                                </div>   
+                            </div>                            
+                        </form>
+                        </div>
+                    </div>                        
+                </li>
+            </ul>
+        </div>
+        
+        <!--Footer-->
+        <footer id="footer">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row flex-box">
+                        <div class="col logo">
+                            <a href="/">
+                                <img src="img/logo.png" alt="Территория качественного ремонта" class="responsive-img"/>
+                            </a>
+                            <p><small>&copy;2018 ТКР-Моторс</small></p>
+                        </div>
+                        <div class="col hide-on-small-only">
+                            <p>
+                                Автосервис<br />на Рублевском шоссе
+                            </p>
+                            <a class="sopdu" href="http://sopdu.org/" target="_blank">	
+                                <img src="img/sopdu.png" alt="Интернет-Лаборатория sopdu"/>
+                                <small class="left">Разработка сайта:<br />Интернет-Лаборатория sopdu</small>								
+                            </a> 
+                        </div>
+                        <div class="col hide">
+                            <ul>
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/about.html">О нас</a></li>
+                                <li><a href="/gallery.html">Галерея</a></li>
+                                <li><a href="/service.html">Услуги</a></li>
+                                <li><a href="/infotmation.html">Полезная информация</a></li>
+                                <li><a href="/review.html">Отзывы</a></li>
+                                <li><a href="/contact.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="col"> 
+                            <p class="right-align right">    
+                                <a href="tel:+74954888753" class="h4">+7&nbsp;(495)&nbsp;<b>488-87-53</b></a><br />
+                                <a href="#callback" class="link modal-trigger">Заказать звонок</a>
+                            </p>
+                            <img src="img/phone.svg" alt="телефон" class="right"/>
+                        </div>
+                        <div class="col show-on-small center-align">
+                            <small>&copy;2018 ТКР-Моторс</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+        <!--Modal-->
+        <div id="callback" class="modal">
+            <div class="modal-content center-align">
+                 <button class="close btn-flat modal-close">&times;</button>
+                <h3>Заказать звонок</h3>
+                <form role="form">
+                    <div class="input-field">
+                        <input type="text" value="" id="name" placeholder="Ваше Имя" />
+                    </div>
+                    <div class="input-field">
+                        <input type="text" value="" id="phone" placeholder="Ваш телефон" />
+                    </div>
+                    <div class="input-field">
+                        <input type="submit" class="btn-large" value="Отправить" />
+                    </div>
+                </form>
+            </div>
+        </div>        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
