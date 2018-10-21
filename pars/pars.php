@@ -124,7 +124,6 @@ function csv_to_array($filename, $USER, $delimiter=';')
     }
     return $data;
 }
-
 if ($USER->IsAuthorized())
 $csv = csv_to_array($filename, $USER);
 else
